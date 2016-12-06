@@ -1,0 +1,32 @@
+[user]
+  name = Espartaco Palma
+  email = esparta@gmail.com
+[core]
+  autocrlf = input
+  safecrlf = true
+
+[alias]
+  g = grep
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+
+[color "diff"]
+  meta = yellow
+
+[core]
+  excludesfile = ~/.gitignore
+  editor = vim --noplugin
+
+[github]
+  user = esparta
