@@ -56,21 +56,22 @@ set expandtab
 set autoindent                    " set auto indent
 
 " Get off my lawn
-" nnoremap <Left> :echoe "Use h"<CR>
-" nnoremap <Right> :echoe "Use l"<CR>
-" nnoremap <Up> :echoe "Use k"<CR>
-" nnoremap <Down> :echoe "Use j"<CR>
-
+" In this house we don't use arrow keys
 no <down> <Nop>
 no <left> <Nop>
 no <right> <Nop>
 no <up> <Nop>
 
-
 ino <down> <Nop>
 ino <left> <Nop>
 ino <right> <Nop>
 ino <up> <Nop>
+
+" Move around splits with <c-hjkl>
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
