@@ -33,17 +33,22 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-repeat'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'ngmy/vim-rubocop'
 Plugin 'rking/ag.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " Colors
 Plugin 'jpo/vim-railscasts-theme'
-
-" Windows
-Plugin 'vim-scripts/ZoomWin'
 
 " Nerdtree
 Plugin 'scrooloose/nerdtree'
 
+" UltiSnips
+Plugin 'SirVer/ultisnips'
+" Snippets are separated from the engine.
+Plugin 'honza/vim-snippets'
+Plugin 'junegunn/fzf.vim'
+Plugin 'w0rp/ale'
+Plugin 'airblade/vim-gitgutter'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -114,6 +119,24 @@ let g:ctrlp_max_height = 30
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_match_window_reversed = 0
 
+" FZF (replaces Ctrl-P, FuzzyFinder and Command-T)
+set rtp+=/usr/local/opt/fzf
+set rtp+=~/.fzf
+nmap ; :Buffers<CR>
+nmap <Leader>r :Tags<CR>
+nmap <Leader>f :Files<CR>
+nmap <Leader>a :Ag<CR>
+
+" ALE
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
+" Dont lint while I wrote, please
+let g:ale_lint_on_text_changed = 'never'
+" if you don't want linters to run on opening a file
+let g:ale_lint_on_enter = 0
+
 " NerdTree
 map <C-n> :NERDTreeToggle<CR>
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
@@ -128,6 +151,11 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
-" use silver searcher for ctrlp
-" let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-" set grepprg=ag
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='bubblegum'
+
+" UltiSnip configuration
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsSnippetsDir = "~/.vim/mysnips/UltiSnips"
