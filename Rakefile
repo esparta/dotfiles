@@ -34,7 +34,8 @@ task :install do
 
     case target
     when is_symlink
-      next if File.readlink(target) == source
+      symlink_to = File.readlink(target)
+      next if symlink_to == source
       info_rm "Removing symlink #{target} --> #{symlink_to}"
       FileUtils.rm(target)
     when file_exist
