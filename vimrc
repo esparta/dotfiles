@@ -86,7 +86,7 @@ set textwidth=80
 set colorcolumn=+1
 
 set laststatus=2                  " always show status bar
-"set number
+set number
 set relativenumber                " show relative line numbers
 set ruler                         " show row and column in footer
 set backspace=indent,eol,start
@@ -107,6 +107,8 @@ colorscheme railscasts
 
 " put git status, column/row number, total lines, and percentage in status
 set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
+
+set cursorline
 
 " vim-rspec mappings
 let g:rspec_command = "!rspec --color --format documentation --fail-fast {spec}"
@@ -161,3 +163,4 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsSnippetsDir = "~/.vim/mysnips/UltiSnips"
 
 set clipboard=unnamed
+set regexpengine=1
