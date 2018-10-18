@@ -6,7 +6,6 @@ DO_NOT_SYMLINK = %w[
   LICENSE
 ]
 
-
 def error(text)
   STDERR.puts "!  #{text}"
 end
@@ -19,37 +18,41 @@ def info_rm(text)
   STDOUT.puts "x  #{text}"
 end
 
+is_symlink = proc { |file| File.symlink?(file) }
+file_exist = proc { |file| File.exist?(file) }
 
-task :default => :install
+task default: :install
 
-desc "Install dotfiles."
+desc 'Install dotfiles.'
 task :install do
-  Dir["*"].each do |file|
+  Dir['**/*'].each do |file|
     source = File.join(Dir.pwd, file)
-    basename = File.basename(source)
-    next if DO_NOT_SYMLINK.include?(basename)
+    next if File.directory?(source)
+    next if DO_NOT_SYMLINK.include?(File.basename(source))
 
-    target = File.expand_path("~/.#{basename}")
+    target = File.join(Dir.home, ".#{file}")
 
-    if File.symlink?(target)
-      symlink_to = File.readlink(target)
-      info_rm "Removing symlink #{target} --> #{symlink_to}" if symlink_to != source
+    case target
+    when is_symlink
+      next if File.readlink(target) == source
+      info_rm "Removing symlink #{target} --> #{symlink_to}"
       FileUtils.rm(target)
-    elsif File.exist?(target)
-      error "#{target} exists. Will not automatically overwrite a non-symlink. Overwrite (y/n)?"
-      print "? "
-      if STDIN.gets.match(/^y/i)
-        info_rm "Removing #{target}."
-        FileUtils.rm_rf(target)
-      else
-        next
-      end
+    when file_exist
+      error <<-MSG.strip
+      #{target} exists. Will not automatically overwrite a non-symlink.
+       Overwrite (y/n)?
+      MSG
+      print '? '
+      next unless STDIN.gets =~ /^y/i
+      info_rm "Removing #{target}."
+      FileUtils.rm_rf(target)
+    else
+      FileUtils.mkdir_p(File.split(target).first)
     end
 
     FileUtils.ln_s(source, target)
     info "Creating symlink: #{target} --> #{source}"
   end
 
-  system "git submodule update --init"
+  system 'git submodule update --init'
 end
-
