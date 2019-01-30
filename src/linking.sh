@@ -1,6 +1,11 @@
-for entry in $(find -L . -type f -not -path '*/\.*')
+# Get all the files (no directories),
+# excluding
+#  - hidden files
+#  - src folder
+for entry in $(find -L . -type f -not -path '*/\.*' -not -path "./src/*")
 do
   thefile=${entry:2}
+
   case "$thefile" in
     $0 | "README.md" \
     | "LICENSE" | "Rakefile" )
@@ -12,13 +17,13 @@ do
    if [ -L "$target" ]
    then
      symlink_to=$(readlink $target)
-     echo $symlink_to	
+
      if [ $symlink_to == $PWD/$thefile ]
      then
        continue
      fi
      echo "Removing symlink $target --> $symlink_to"
-     echo "rm $target"
+     rm "$target"
    fi
 
    if [ -e "$target" ]; then
@@ -27,14 +32,15 @@ do
 MSG
       read answer
       if [ "$answer" != "${answer#[Yy]}" ] ;then
-      cp "$target" "$target"_$(date +"%Y_%m_%d_%H%M%S")
+	# We are deleting a file, so silently do a backup
+        cp "$target" "$target"_$(date +"%Y_%m_%d_%H%M%S")
         echo "Removing $target"
         rm -rf "$target"
       else
 	continue
       fi
    else
-     new_folder=$(dirname $target)
+     new_folder=$(dirname "$target")
      if [ ! -d "$new_folder" ]
      then
        echo "Creating: $(dirname $target)"
