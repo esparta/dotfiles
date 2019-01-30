@@ -2,6 +2,7 @@ DO_NOT_SYMLINK = %w[
   .gitignore
   extras
   Rakefile
+  Makefile
   README.md
   LICENSE
 ]
@@ -25,7 +26,7 @@ task default: :install
 
 desc 'Install dotfiles.'
 task :install do
-  Dir['**/*'].each do |file|
+  FileList['**/*'].exclude(/^src/).each do |file|
     source = File.join(Dir.pwd, file)
     next if File.directory?(source)
     next if DO_NOT_SYMLINK.include?(File.basename(source))
