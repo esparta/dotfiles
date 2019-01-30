@@ -27,7 +27,7 @@ do
    fi
 
    if [ -e "$target" ]; then
-      cat <<MSG
+      cat <<MSG >&2
  $target exists. Will not automatically overwrite a non-symlink. Overwrite (y/n)?
 MSG
       read answer
