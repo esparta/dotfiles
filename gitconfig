@@ -1,6 +1,7 @@
 [user]
   name = Espartaco Palma
   email = esparta@gmail.com
+	signingkey = E267187D075D3405
 [core]
   autocrlf = input
   safecrlf = true
