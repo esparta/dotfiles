@@ -16,3 +16,9 @@ git
 # you will take my nslookup from my dead hands
 # Now I've changed
 bind-tools
+
+# Bat is a better `cat`
+# The maintainers says it's a
+# A cat(1) clone with wings.
+# https://github.com/sharkdp/bat
+bat
