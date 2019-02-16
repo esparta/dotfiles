@@ -1,0 +1,24 @@
+# I always need to download things from the tubes
+curl
+wget
+
+# multiplexing is law
+tmux
+
+# Go Fish!
+fish
+
+# Git, I'm also a Git
+git
+
+# You can dig it!
+# I know once upon a time I said
+# you will take my nslookup from my dead hands
+# Now I've changed
+bind-tools
+
+# Bat is a better `cat`
+# The maintainers says it's a
+# A cat(1) clone with wings.
+# https://github.com/sharkdp/bat
+bat
