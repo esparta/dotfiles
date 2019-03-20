@@ -12,7 +12,7 @@ do
       continue
       ;;
   esac
-  
+
    target=$HOME/."$thefile"
    if [ -L "$target" ]
    then
@@ -32,12 +32,12 @@ do
 MSG
       read answer
       if [ "$answer" != "${answer#[Yy]}" ] ;then
-	# We are deleting a file, so silently do a backup
+        # We are deleting a file, so silently do a backup
         cp "$target" "$target"_$(date +"%Y_%m_%d_%H%M%S")
         echo "Removing $target"
         rm -rf "$target"
       else
-	continue
+        continue
       fi
    else
      new_folder=$(dirname "$target")
