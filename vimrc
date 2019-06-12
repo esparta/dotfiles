@@ -164,3 +164,8 @@ let g:UltiSnipsSnippetsDir = "~/.vim/mysnips/UltiSnips"
 
 set clipboard=unnamed
 set regexpengine=1
+
+" CVE-2019-12735
+" https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12735
+set modelines=0
+set nomodeline
