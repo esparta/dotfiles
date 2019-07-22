@@ -31,3 +31,5 @@
 
 [github]
   user = esparta
+[gpg]
+	program = gpg2
