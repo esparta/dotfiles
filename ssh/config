@@ -1,3 +1,5 @@
+Include config.d/*
+AddKeysToAgent yes
 Host github.com
    IdentitiesOnly yes
    IdentityFile ~/.ssh/id_ed25519_github
