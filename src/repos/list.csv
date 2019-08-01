@@ -13,6 +13,7 @@ master,git@github.com:esparta/psych.git,repos/ruby/stdlib/psych,https://github.c
 master,git@github.com:esparta/rss.git,repos/ruby/network/rss,https://github.com/ruby/rss.git
 master,git@github.com:esparta/shell.git,repos/ruby/stdlib/shell,https://github.com/ruby/shell.git
 master,git@github.com:esparta/stringio.git,repos/ruby/stdlib/stringio,https://github.com/ruby/stringio.git
+master,git@github.com:esparta/strscan.git,repos/ruby/stdlib/strscan,https://github.com/ruby/strscan.git
 master,git@github.com:esparta/tracer.git,repos/ruby/stdlib/tracer,https://github.com/ruby/tracer.git
 master,git@github.com:esparta/mspec.git,repos/ruby/test/mspec,https://github.com/ruby/mspec.git
 master,git@github.com:esparta/spec.git,repos/ruby/test/spec,https://github.com/ruby/spec.git
