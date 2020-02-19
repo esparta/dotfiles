@@ -36,6 +36,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'elixir-editors/vim-elixir'
 " Colors
 Plugin 'jpo/vim-railscasts-theme'
 
