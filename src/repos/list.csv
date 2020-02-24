@@ -38,3 +38,4 @@ master,git@github.com:esparta/osem,repos/ruby/apps/osem,https://github.com/openS
 master,git@github.com:esparta/www.ruby-lang.org,repos/ruby/docs/ruby_lang_org,https://github.com/ruby/www.ruby-lang.org.git
 master,git@github.com:esparta/97cosas,repos/content/97cosas,
 master,git@github.com:esparta/dry-logic.git,repos/ruby/dry-rb/dry-logic,https://github.com/dry-rb/dry-logic.git
+master,git@github.com:esparta/shrine.git,repos/ruby/libs/shrine,https://github.com/shrinerb/shrine.git
