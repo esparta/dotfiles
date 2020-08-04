@@ -1,7 +1,8 @@
 [user]
   name = Espartaco Palma
-  email = esparta@gmail.com
-	signingkey = E267187D075D3405
+	email = git@esparta.co
+  signingkey = 7D9D0DD1436B5ADA
+
 [core]
   autocrlf = input
   safecrlf = true
