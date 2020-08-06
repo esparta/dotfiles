@@ -1,6 +1,6 @@
 [user]
   name = Espartaco Palma
-	email = git@esparta.co
+  email = git@esparta.co
   signingkey = 7D9D0DD1436B5ADA
 
 [core]
@@ -33,4 +33,4 @@
 [github]
   user = esparta
 [gpg]
-	program = gpg2
+  program = gpg2
