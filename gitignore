@@ -7,3 +7,5 @@ db/*.sqlite3
 .netrwhist
 project-notes.txt
 .bundle
+.tool-versions
+.byebug_history
