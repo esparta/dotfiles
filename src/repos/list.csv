@@ -20,7 +20,6 @@ master,git@github.com:esparta/spec.git,repos/ruby/test/spec,https://github.com/r
 master,git@github.com:esparta/ipaddr.git,repos/ruby/network/ipaddr,https://github.com/ruby/ipaddr.git
 master,git@github.com:esparta/webrick.git,repos/ruby/network/webrick,https://github.com/ruby/webrick.git
 master,git@github.com:esparta/matrix.git,repos/ruby/stdlib/matrix,https://github.com/ruby/matrix.git
-master,git@github.com:esparta/reline.git,repos/ruby/stdlib/reline,https://github.com/ruby/reline.git
 master,git@github.com:esparta/date.git,repos/ruby/stdlib/date,https://github.com/ruby/date.git
 master,git@github.com:esparta/rack.git,repos/ruby/network/rack/rack,https://github.com/rack/rack.git
 master,git@github.com:esparta/rack-contrib.git,repos/ruby/network/rack/rack-contrib,https://github.com/rack/rack-contrib.git
