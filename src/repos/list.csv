@@ -42,3 +42,4 @@ master,git@github.com:esparta/elixir.git,repos/elixir/elixir,https://github.com/
 master,git@github.com:esparta/dry-configurable,repos/ruby/dry-rb/configurable,https://github.com/dry-rb/dry-configurable.git
 master,git@github.com:esparta/dry-monitor,repos/ruby/dry-rb/monitor,https://github.com/dry-rb/dry-monitor.git
 master,git@github.com:esparta/dry-matcher,repos/ruby/dry-rb/matcher,https://github.com/dry-rb/dry-matcher.git
+master,git@github.com:esparta/unpwn,repos/ruby/libs/unpwn,https://github.com/indirect/unpwn.git
