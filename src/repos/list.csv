@@ -14,7 +14,6 @@ master,git@github.com:esparta/rss.git,repos/ruby/network/rss,https://github.com/
 master,git@github.com:esparta/shell.git,repos/ruby/stdlib/shell,https://github.com/ruby/shell.git
 master,git@github.com:esparta/stringio.git,repos/ruby/stdlib/stringio,https://github.com/ruby/stringio.git
 master,git@github.com:esparta/strscan.git,repos/ruby/stdlib/strscan,https://github.com/ruby/strscan.git
-master,git@github.com:esparta/tracer.git,repos/ruby/stdlib/tracer,https://github.com/ruby/tracer.git
 master,git@github.com:esparta/mspec.git,repos/ruby/test/mspec,https://github.com/ruby/mspec.git
 master,git@github.com:esparta/spec.git,repos/ruby/test/spec,https://github.com/ruby/spec.git
 master,git@github.com:esparta/ipaddr.git,repos/ruby/network/ipaddr,https://github.com/ruby/ipaddr.git
@@ -43,3 +42,5 @@ master,git@github.com:esparta/dry-configurable,repos/ruby/dry-rb/configurable,ht
 master,git@github.com:esparta/dry-monitor,repos/ruby/dry-rb/monitor,https://github.com/dry-rb/dry-monitor.git
 master,git@github.com:esparta/dry-matcher,repos/ruby/dry-rb/matcher,https://github.com/dry-rb/dry-matcher.git
 master,git@github.com:esparta/unpwn,repos/ruby/libs/unpwn,https://github.com/indirect/unpwn.git
+main,git@github.com:esparta/rubydoc.info,repos/ruby/apps/rubydoc,https://github.com/docmeta/rubydoc.info.git
+master,git@github.com:esparta/ruby-net-ldap.git,repos/ruby/network/net-ldap,https://github.com/ruby-ldap/ruby-net-ldap.git
