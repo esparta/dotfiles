@@ -44,3 +44,4 @@ master,git@github.com:esparta/dry-matcher,repos/ruby/dry-rb/matcher,https://gith
 master,git@github.com:esparta/unpwn,repos/ruby/libs/unpwn,https://github.com/indirect/unpwn.git
 main,git@github.com:esparta/rubydoc.info,repos/ruby/apps/rubydoc,https://github.com/docmeta/rubydoc.info.git
 master,git@github.com:esparta/ruby-net-ldap.git,repos/ruby/network/net-ldap,https://github.com/ruby-ldap/ruby-net-ldap.git
+master,git@github.com:esparta/dry-initializer,repos/ruby/dry-rb/initializer,https://github.com/dry-rb/dry-initializer.git
