@@ -29,7 +29,6 @@ master,git@github.com:esparta/dry-schema.git,repos/ruby/dry-rb/schema,https://gi
 master,git@github.com:esparta/dry-core.git,repos/ruby/dry-rb/core,https://github.com/dry-rb/dry-core.git
 master,git@github.com:esparta/dry-monads.git,repos/ruby/dry-rb/monads,https://github.com/dry-rb/dry-monads.git
 master,git@github.com:esparta/dry-struct.git,repos/ruby/dry-rb/struct,https://github.com/dry-rb/dry-struct.git
-master,git@github.com:esparta/dry-rb.org.git,repos/ruby/dry-rb/dry-rb-doc,https://github.com/dry-rb/dry-rb.org.git
 master,git@github.com:esparta/dry-types.git,repos/ruby/dry-rb/types,https://github.com/dry-rb/dry-types.git
 master,git@github.com:esparta/rails,repos/ruby/rails/rails,https://github.com/rails/rails.git
 master,git@github.com:esparta/osem,repos/ruby/apps/osem,https://github.com/openSUSE/osem.git
