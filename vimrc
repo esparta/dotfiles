@@ -1,3 +1,7 @@
+" extends the existing functionality of %
+" https://catonmat.net/vim-plugins-matchit-vim
+runtime macros/matchit.vim
+
 " Leader
 let mapleader = ","
 
@@ -127,7 +131,7 @@ set rtp+=/usr/local/opt/fzf
 set rtp+=~/.fzf
 nmap ; :Buffers<CR>
 nmap <Leader>r :Tags<CR>
-nmap <Leader>f :Files<CR>
+nmap <Leader>f :GFiles<CR>
 nmap <Leader>a :Ag<CR>
 
 " ALE
