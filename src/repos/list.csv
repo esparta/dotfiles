@@ -5,7 +5,6 @@ master,git@github.com:esparta/fileutils.git,repos/ruby/stdlib/fileutils,https://
 master,git@github.com:esparta/forwardable.git,repos/ruby/stdlib/forwardable,https://github.com/ruby/forwardable.git
 master,git@github.com:esparta/ostruct.git,repos/ruby/stdlib/ostruct,https://github.com/ruby/ostruct.git
 master,git@github.com:esparta/rdoc.git,repos/ruby/stdlib/rdoc,https://github.com/ruby/rdoc.git
-master,git@github.com:esparta/irb.git,repos/ruby/stdlib/irb,https://github.com/ruby/irb.git
 master,git@github.com:esparta/logger.git,repos/ruby/stdlib/logger,https://github.com/ruby/logger.git
 master,git@github.com:esparta/rake.git,repos/ruby/stdlib/rake,https://github.com/ruby/rake.git
 master,git@github.com:esparta/openssl.git,repos/ruby/stdlib/openssl,https://github.com/ruby/openssl.git
