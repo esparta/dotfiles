@@ -21,7 +21,6 @@ github,master,git@github.com:esparta/matrix.git,repos/ruby/stdlib/matrix,https:/
 github,master,git@github.com:esparta/date.git,repos/ruby/stdlib/date,https://github.com/ruby/date.git
 github,master,git@github.com:esparta/rack.git,repos/ruby/network/rack/rack,https://github.com/rack/rack.git
 github,master,git@github.com:esparta/rack-contrib.git,repos/ruby/network/rack/rack-contrib,https://github.com/rack/rack-contrib.git
-github,master,git@github.com:esparta/rack-mini-profiler.git,repos/ruby/network/rack/rack-mini-profiler,https://github.com/MiniProfiler/rack-mini-profiler.git
 github,main,git@github.com:esparta/dry-system.git,repos/ruby/dry-rb/system,https://github.com/dry-rb/dry-system.git
 github,main,git@github.com:esparta/dry-validation.git,repos/ruby/dry-rb/validation,https://github.com/dry-rb/dry-validation.git
 github,main,git@github.com:esparta/dry-schema.git,repos/ruby/dry-rb/schema,https://github.com/dry-rb/dry-schema.git
@@ -43,3 +42,4 @@ github,master,git@github.com:esparta/unpwn,repos/ruby/libs/unpwn,https://github.
 github,main,git@github.com:esparta/rubydoc.info,repos/ruby/apps/rubydoc,https://github.com/docmeta/rubydoc.info.git
 github,master,git@github.com:esparta/ruby-net-ldap.git,repos/ruby/network/net-ldap,https://github.com/ruby-ldap/ruby-net-ldap.git
 github,main,git@github.com:esparta/dry-initializer,repos/ruby/dry-rb/initializer,https://github.com/dry-rb/dry-initializer.git
+github,main,git@github.com:esparta/dry-logger,repos/ruby/dry-rb/logger,https://github.com/dry-rb/dry-logger.git
