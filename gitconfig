@@ -13,8 +13,9 @@
   co = checkout
   ci = commit
   st = status
+  sw = switch
   br = branch
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short -n 15
   type = cat-file -t
   dump = cat-file -p
   cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
